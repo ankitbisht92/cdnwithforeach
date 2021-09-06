@@ -11,41 +11,6 @@ provider "azurerm"{
    features {}
 }
 
-/*locals{
-  endpoints = {
-     endpoint = {
-      name = "Endpoint-one"
-      origin = [{
-        origin_name = "Origin-one",
-        origin_host_name = "www.google.com",
-        http_port = 80,
-        https_port = 443
-      }
-      ]
-    }
-    endpoint_2 = {
-      name = "Endpoint-two"
-      origin = [{
-        origin_name = "Origin-two",
-        origin_host_name = "www.facebook.com",
-        http_port = 80,
-        https_port = 443
-      }
-      ]
-    }
-    endpoint_2 = {
-      name = "Endpoint-two"
-      origin = [{
-        origin_name = "Origin-two",
-        origin_host_name = "www.facebook.com",
-        http_port = 80,
-        https_port = 443
-      }
-      ]
-    }
-  }
-}*/
-
 data "azurerm_resource_group" "resource_group" {
   name     = var.resource_group_name
 }
